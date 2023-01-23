@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/04c9a7f954.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="Cart.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/brand-assets/famous-footwear-logo.svg?h=61&iar=0&w=190&hash=6D536C44AAB2EED405AF73A943F4BCCB" alt="" style="width: 150px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="nav">
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Women</a>
+            
+            <a class="nav-item nav-link" href="#">Men</a>
+            <a class="nav-item nav-link" href="#">Kids</a>
+            <a class="nav-item nav-link" href="#">Brand</a>
+            <a class="nav-item nav-link" href="#">Accessories</a>
+            <a class="nav-item nav-link" href="#">Sale</a>
+            <a class="nav-item nav-link" style="color: #d50032;" href="#">Your Offers</a>
+            
+           
+          </div>
+        </div>
+    </nav>
+
+        <div id="store">
+            <div>
+            <i class="fa-solid fa-location-dot fa-xl"></i>
+            <a href="">Find Store</a>
+           </div>
+            <div>
+            <p>Free Shipping for Rewards or Orders $75+ </p>
+            <a href="Signup.html">SignUp/Join Now</a>
+            </div>
+          
+          </div>
+
+          <div class="buy">
+            <p>Buy one,get on 50% Off Boots</p>
+            <p>Exclusion Apply.</p>
+          </div>
+
+          <div style="margin-top: 30px;">
+            <h2 style="text-align: center; font-weight: 700;">Your Cart <span id="items">0</span></h2>
+          </div>
+
+          <div class="main">
+            <div class="cont">
+
+            </div>
+
+            <div class="order">
+                <h5>Order Summary</h5>
+               <div>
+                <p>Payable amount</p>
+                <p><span id="total">0</span></p>
+               </div>
+   
+               <div class="xyz">
+                     <div>
+                        <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/rewards-images/plcc-double.png?w=+1440&hash=68621878391AE4CD59361AC547BEFA9F" alt="">
+                     </div>
+                     <div>
+                        <h3>Enjoy $ Off Today</h3>
+                        <p>On Your first purchase <br>
+                        with FAMOUSLY YOUR REWARD
+                        </p>
+                     </div>
+               </div>
+                <div class="pay">
+                   <button style="cursor: pointer;" value="ok" id="Order">Order Place</button>
+                </div>
+            </div>
+          </div>
+ <hr style="border: 1px solid;">
+          <div class="voucher">
+
+             <div class="voucher1">
+              
+                    <h4>Apply a Promo Code </h4>
+               <br>
+               
+           <input type="text" placeholder="Promo Code" id="code">
+           <button id="apply">APPLY +</button>
+          
+             </div>
+
+             <div>
+            <h3>Have Reward Cash or Extras</h3>
+            <br>
+            
+            <p>Sign in to use Reward Cash and Extras, plus earn up to 444 points on today's order, and get FREE SHIPPING, no minimum.</p>
+            
+            <a href="Signin.html">SIGN IN/JOIN NOW</a>
+             </div>
+          </div>
+
+          <div class="contact">
+            <div>
+           <div>
+            <p><strong>Contact With Us</strong></p>
+            </div>
+            <div>
+                <a href="https://m.facebook.com/150784285312/" style="margin-left: 10px; margin-right: 0px;"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a href="https://www.instagram.com/famousfootwear/" style="margin-left: 15px; margin-right: 0px;"><i class="fa-brands fa-instagram fa-xl"></i></a>
+               <a href="https://www.instagram.com/famousfootwear/"><i class="fa-brands fa-twitter fa-xl"></i></a>
+            </div>
+            </div>
+         </div>
+</body>
+
+<script>
+    let cont=document.querySelector(".cont")
+    let Totalbill=document.getElementById("total")
+    let item=document.getElementById("items")
+    let code=document.getElementById("code")
+    let apply=document.getElementById("apply")
+
+    let Cartdata=JSON.parse(localStorage.getItem("Cart"))||[]
+    totalbill()
+    items()
+    console.log(Cartdata)
+    displaydata()
+
+    function displaydata(){
+        cont.innerHTML=""
+        for(let i=0; i<Cartdata.length; i++ ){
+            
+            let card=document.createElement("div")
+            card.setAttribute("class","card")
+            let imgcard=document.createElement("div")
+            imgcard.setAttribute("class","img")
+            let detailcard=document.createElement("div")
+            detailcard.setAttribute("class","detail")
+            
+            let img=document.createElement("img")
+            img.setAttribute("src",Cartdata[i].image)
+       
+            let name=document.createElement("h3")
+            name.innerText=Cartdata[i].name
+
+            let remove=document.createElement("h6")
+            remove.innerText="Remove to Cart"
+            
+            let increament=document.createElement("button")
+            increament.innerText="+"
+            
+            increament.addEventListener("click",function(){
+                Cartdata[i].quantity++
+                
+                localStorage.setItem("Cart",JSON.stringify(Cartdata))
+                displaydata()
+
+                totalbill()
+                
+            })
+
+            let decreament=document.createElement("button")
+            decreament.innerText="-"
+
+            decreament.addEventListener("click",function(){
+                if(Cartdata[i].quantity>1){
+                Cartdata[i].quantity--
+               
+                }
+                localStorage.setItem("Cart",JSON.stringify(Cartdata))
+                displaydata()
+                totalbill()
+            })
+            let span=document.createElement("span")
+            span.innerText=Cartdata[i].quantity
+
+            remove.addEventListener("click",function(){
+         
+         let el=Cartdata.splice(i,1)
+        
+        localStorage.setItem("Cart",JSON.stringify(Cartdata))
+        displaydata()
+        items()
+        totalbill()
+       })
+            let price=document.createElement("p")
+            price.innerText= "$"+Cartdata[i].price
+            
+             
+
+            
+            imgcard.append(img)
+            detailcard.append(name,price,increament,span,decreament,remove)
+            card.append(imgcard,detailcard)
+            cont.append(card)
+        }
+    }
+
+function totalbill(){
+    Totalbill.innerText=""
+    total=0
+    for(let i=0; i<Cartdata.length; i++){
+        total+=Cartdata[i].quantity*Cartdata[i].price
+    }
+    Totalbill.innerText="$"+total
+}
+
+function items(){
+    item.innerText=""
+    item.innerText=Cartdata.length+" "+"items"
+}
+
+apply.addEventListener("click",function(){
+    total=0
+    for(let i=0; i<Cartdata.length; i++){
+        total+=Cartdata[i].quantity*Cartdata[i].price
+    }
+    if(code.value=="Krishna2004"){
+        Totalbill.innerText=""
+       Totalbill.innerText= "$"+(total-(total*30/100))
+    }else{
+        totalbill()
+    }
+
+})
+
+let order=document.getElementById("Order")
+
+order.addEventListener("click",function(){
+    if(order.value=="ok"){
+        console.log("ok")
+        window.location.pathname="obtainable-cats-5233/Signin.html"
+    }
+})
+
+
+</script>
+</html>

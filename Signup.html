@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>SignUp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -233,9 +233,11 @@
          alert ("Please Fill All Detail")
          }
          else{
+           
             data.push(obj) 
            localStorage.setItem("logindata",JSON.stringify(data))
            alert("Your Detail Has Saved")
+           window.location.pathname="obtainable-cats-5233/index.html"
          }
      }
         

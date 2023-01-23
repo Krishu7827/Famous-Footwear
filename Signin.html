@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign</title>
+    <title>SignIn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -139,17 +139,18 @@ let signin=document.querySelector("button")
        console.log(login)
 
    signin.addEventListener("click",function(){
-    if(email.value==""){
-        alert("Please Enter Your Email")
-    }else{
-       if(check(login)){
-        //call function page here(Home Page)
+    if(email.value=="" || password.value==""){
+        alert("Please Full all details")
+    }
+      else if(check(login)){
+        window.location.pathname="obtainable-cats-5233/product/delivery.html"
+       alert("Succesfully Signin")
        }else{
         alert("Wrong Password Or Wrong Email")
        }
 
     }
-   })
+   )
 
   function check(data){
     for(let i=0; i<data.length; i++){

@@ -1,0 +1,145 @@
+.nav-item{
+    margin-right: 40px;
+   
+ }
+ .nav{
+     margin-left: 50px;
+ }
+ a{
+     margin-top: 20px;
+     text-decoration: none;
+     font-weight: 700;
+     color: black;
+ 
+ }
+
+.delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.delivery>div{
+    width: 50%;
+    margin: auto;
+    padding-left: 60px;
+    
+}
+.delivery>div>input{
+    width: 70%;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px dashed black;
+    padding-left: 10px;
+  
+}
+.delivery>div>button{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    background-color: #333f48;
+    color: white;
+    font-weight: 700;
+}
+.delivery>div>button:hover{
+    background-color: greenyellow;
+    color: #333f48;
+}
+.delivery>div>h4{
+    font-weight: 700;
+}
+.delivery>div>input::placeholder{
+    font-weight: 700;
+    
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 90px;
+    background-color: #f0f0f0;
+    border-top:5px solid crimson;
+ }
+ .contact>div{
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   column-gap: 0px;
+  
+ }
+ .contact>div :nth-child(2)>i{
+    margin-right: 25px;
+ }
+ @media screen and (min-width:320px) and (max-width:449px){
+    .nav-item{
+        margin-left: 20px;
+       
+     }
+
+     .delivery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .delivery>div>button{
+        width: 100%;
+       
+        text-align: center;
+        margin-left: 0%;
+       
+    }
+
+    .delivery>div>input{
+        width: 100%;
+        margin-bottom: 30px;
+      
+    }
+    .delivery>div{
+        width: 50%;
+        margin: auto;
+        padding-left: 0px;
+        
+    }
+    .delivery>div>img{
+        width: 50% ;
+    }
+
+    .contact>div{
+        display: grid;
+       grid-template-columns: repeat(1,1fr);
+       row-gap: 4px;
+       margin-top:20px ;
+
+      
+     }
+     .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: #f0f0f0;
+        border-top:5px solid crimson;
+        width: 100%;
+        padding-bottom: 170px;
+     }
+ }
+
+ @media screen and (min-width:450px) and (max-width:1000px){
+    .contact>div{
+        display: grid;
+       grid-template-columns: repeat(2,1fr);
+       row-gap: 5px;
+      padding-bottom:50px ;
+     }
+ }
